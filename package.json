@@ -1,0 +1,55 @@
+{
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development",
+    "run:browser": "npm build && cordova run browser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@sentry/react": "^7.119.1",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "babel-loader": "^9.2.1",
+    "cordova-android": "^13.0.0",
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-device": "^3.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.2",
+    "sentry-cordova": "^1.4.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "sentry-cordova": {
+        "SENTRY_ANDROID_SDK_VERSION": "7.14.0"
+      }
+    }
+  }
+}

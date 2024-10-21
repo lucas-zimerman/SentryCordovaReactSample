@@ -1,0 +1,44 @@
+/* src/styles.css */
+
+/* Container for the button list */
+.button-list-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    align-items: center; /* Center the buttons horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height for vertical centering */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Base button styles */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Make buttons wider to fill space */
+}
+
+/* Native iOS-like button style */
+.ios-button {
+    background-color: #007AFF; /* iOS blue */
+    color: white;
+}
+
+.ios-button:active {
+    background-color: #0051b3; /* Darker blue when active */
+}
+
+/* Native Android-like button style */
+.android-button {
+    background-color: #3DDC84; /* Android green */
+    color: white;
+}
+
+.android-button:active {
+    background-color: #2cb371; /* Darker green when active */
+}
